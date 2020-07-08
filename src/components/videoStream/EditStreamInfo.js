@@ -245,7 +245,7 @@ export default class AddStreamInfo extends React.Component {
                 <Navbar />
 
                 <div class={this.state.successMessage}>
-                    <strong>Success!</strong> Movies added successfully, Wanna add more Or<Link to="/dashboard"> Click here</Link> to see the result ^^
+                    <strong>Success!</strong> Video stream info. added successfully, Wanna add more Or<Link to="/dashboard"> Click here</Link> to see the result
           <button type="button" class="close" data-dismiss="alert">&times;</button>
                 </div>
 

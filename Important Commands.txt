@@ -1,0 +1,24 @@
+Create Virtual enviroment
+-------------------------------------
+
+on cmd go to project directory
+
+env - environment name
+-----------------
+py -m venv env
+-----------------
+to activate:
+---------------------
+.\env\Scripts\activate
+----------------------
+set ENV_FILE_LOCATION=./.env
+
+Start Project
+-------------------------------
+django-admin startproject project-name .
+---------------------------------
+
+Start Server
+------------------------
+python manage.py runserver
+----------------------------

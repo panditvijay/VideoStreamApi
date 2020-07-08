@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import {BrowserRouter as Router, Route} from 'react-router-dom'; 
+
+import Navbar from './components/Navbar'
+import Dashboard from './components/Dashboard'
+import signin from './components/user/signin'
+import signup from './components/user/signup'
+import logout from './components/user/Logout'
+import AddStreamInfo from './components/videoStream/AddStreamInfo'
+import EditStreamInfo from './components/videoStream/EditStreamInfo'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+     
+      <Route path="/" exact component={signin} />
+      <Route path="/signup" component={signup}/>
+      <Route path="/dashboard" component={Dashboard}/>
+      <Route path="/logout" component={logout}/>
+      <Route path="/addstream" component={AddStreamInfo}/>
+      <Route path="/edit/:id" component={EditStreamInfo}/>
+      
+      
+    </Router>
   );
 }
 

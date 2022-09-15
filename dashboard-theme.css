@@ -1,0 +1,9 @@
+section[aria-label="UV Power panel"] {
+    background-color: yellow
+}
+
+
+
+section[aria-label="HEAD_TEMP Most Recent Value panel"] {
+    background-color: blue
+}
